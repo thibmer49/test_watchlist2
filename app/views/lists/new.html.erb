@@ -1,0 +1,8 @@
+<div class="container my-3">
+  <h1>Créer une nouvelle liste</h1>
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name %>
+    <%= f.association :movies %>
+    <%= f.button :submit %>
+<% end %>
+</div>
