@@ -5,9 +5,13 @@
 </div>
 <div class="container my-3">
   <h2>Here's all your lists</h2>
-  <ul>
-    <% @lists.each do |list| %>
-      <li><%= list.name %></li>
-    <% end %>
-  </ul>
+    <div class="cards">
+      <% @lists.each do |list| %>
+        <%= link_to list_path(list), class:"text-decoration-none" do %>
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.pexels.com/photos/458379/pexels-photo-458379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)">
+            <%= list.name %>
+          </div>
+          <% end %>
+      <% end %>
+    </div>
 </div>
