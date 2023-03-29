@@ -28,15 +28,3 @@ url = "http://tmdb.lewagon.com/movie/top_rated"
   end
 end
 puts "Movies created"
-
-List.create!(
-  name: 'Horror',
-  photo: 'https://images.pexels.com/photos/619419/pexels-photo-619419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-)
-puts "List created"
-
-List.create!(
-  name: 'Comedy',
-  photo: 'https://images.pexels.com/photos/2219118/pexels-photo-2219118.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-)
-puts "List created"
