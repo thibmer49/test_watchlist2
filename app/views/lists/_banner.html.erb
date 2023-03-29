@@ -1,0 +1,13 @@
+<% if @list.photo.attached? %>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path(@list.photo.key, :transformation => [{:width => 400, :height => 300, :crop => :fill}], :secure => true)%>')">
+    <div class="container">
+      <h1 class="text-center"><%= @list.name %></h1>
+    </div>
+  </div>
+<% else %>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('cinema.jpg')">
+    <div class="container">
+      <h1 class="text-center"><%= @list.name %></h1>
+    </div>
+  </div>
+<% end %>

@@ -1,8 +1,18 @@
-<div class="container my-3">
-  <h1>Créer une nouvelle liste</h1>
-  <%= simple_form_for @list do |f| %>
-    <%= f.input :name %>
-    <%= f.input :photo, as: :file %>
-    <%= f.button :submit %>
-<% end %>
+<div class="container my-5">
+  <div class="wrapper">
+    <div class="row bg-white rounded p-4">
+      <div class="col-12 col-lg-12">
+        <div class="justify-content-center">
+          <h1 class='text-center'>Create a new list</h1>
+          <%= simple_form_for @list do |f| %>
+            <%= f.input :name, label: "Name of the list" %>
+            <%= f.input :photo, as: :file, label: "Add a photo:" %>
+            <div class="actions">
+              <%= f.button :submit, class:'btn btn-primary' %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

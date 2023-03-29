@@ -9,11 +9,12 @@
     <script src="/js/tom-select.complete.js"></script>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <link href="https://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet">
   </head>
 
   <body>
     <%= render 'shared/navbar' %>
     <%= yield %>
-  <%= render 'shared/footer' %>
+    <%= render 'shared/footer' %>
   </body>
 </html>

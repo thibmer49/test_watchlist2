@@ -1,0 +1,30 @@
+.btn-delete {
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 6px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.3s ease;
+  margin: 20px;
+  position: absolute;
+  top: 60px;
+}
+
+.btn-delete:hover {
+  background-color: purple;
+  color: white;
+}
+
+.btn-primary {
+  color: white;
+  padding: 10px;
+  width: 50%;
+  font-size: larger;
+  border-radius: 6px;
+}
+
+.btn-info {
+  padding: 10px;
+}

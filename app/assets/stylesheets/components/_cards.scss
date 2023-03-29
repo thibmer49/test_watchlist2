@@ -19,6 +19,47 @@
   grid-gap: 16px;
 }
 
+.card-bookmark {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-bookmark > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-bookmark h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-bookmark p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-bookmark .card-bookmark-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-bookmark .card-bookmark-comments {
+  align-items: end;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: flex-end;
+  position: relative;
+}
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {

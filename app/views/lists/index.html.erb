@@ -3,12 +3,12 @@
     <h1 class="text-center">Welcome to Le Wagon WATCHLIST</h1>
   </div>
 </div>
-<div class="container my-3">
-  <h2>Here's all your lists</h2>
-    <div class="cards">
+<div class="container my-4">
+  <h3>Here's all your lists</h3>
+    <div class="cards mt-3">
       <% @lists.each do |list| %>
         <%= link_to list_path(list), class:"text-decoration-none" do %>
-          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.pexels.com/photos/458379/pexels-photo-458379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)">
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= list.photo.key? ? cl_image_path(list.photo.key) : image_path("cinema.jpg") %>')">
             <%= list.name %>
           </div>
           <% end %>
